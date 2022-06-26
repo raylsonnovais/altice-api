@@ -21,9 +21,9 @@ public class AlticeService {
     }
     
     private List<Integer> mountList(Integer n){
-    	for(int count = 0; count < n ;count++){
-        	if(count + 1 >= altice.size()) {
-        		altice.add(altice.get(n - 3) + altice.get(n - 2));
+    	for(int count = 1; count < n ;count++){
+        	if(count >= altice.size()) {
+        		altice.add(altice.get(count - 3) + altice.get(count - 2));
         	}	
         }
     	return altice;
